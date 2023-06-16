@@ -1,6 +1,12 @@
-package VittorioVescio.u5w3d5esercitazione.observer;
+package VittorioVescio.u5w3d5esercitazione.antincendio_observer;
 
 public class ControlCenter implements Observer {
+	private String lastUpdate;
+	private int updateCount;
+
+	public String getLastUpdate() {
+		return lastUpdate;
+	}
 
 	@Override
 	public void update(FireSensor fs) {
@@ -11,7 +17,7 @@ public class ControlCenter implements Observer {
 			if (url.contains("lat=41.871857&lon=12.477398")) {
 				System.out.println();
 				System.out.println(
-						"Attenzione, gli uffici di Epicode sono in fiamme! Fare Commit + Push prima di abbandonare l'edificio!");
+						"Allarme incendio! Gli uffici di Epicode sono in fiamme! Fare Commit + Push prima di abbandonare l'edificio!");
 			} else {
 				System.out.println();
 				System.out.println("Allarme! Incendio in corso: " + url);

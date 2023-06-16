@@ -1,4 +1,4 @@
-package VittorioVescio.u5w3d5esercitazione.observer;
+package VittorioVescio.u5w3d5esercitazione.antincendio_observer;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
