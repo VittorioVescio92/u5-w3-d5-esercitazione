@@ -1,12 +1,6 @@
 package VittorioVescio.u5w3d5esercitazione.antincendio_observer;
 
 public class ControlCenter implements Observer {
-	private String lastUpdate;
-	private int updateCount;
-
-	public String getLastUpdate() {
-		return lastUpdate;
-	}
 
 	@Override
 	public void update(FireSensor fs) {
